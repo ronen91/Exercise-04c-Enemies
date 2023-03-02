@@ -24,8 +24,8 @@ func _physics_process(_delta):
 		$AnimatedSprite.flip_h = false
 		direction = 1
 		$Attack.cast_to.x = abs($Attack.cast_to.x)
-	#if $AnimatedSprite.animation == "Attack": $AnimatedSprite.offset.x = 7*direction
-	#else: $AnimatedSprite.offset.x = 0
+	if $AnimatedSprite.animation == "Attack": $AnimatedSprite.offset.x = 7*direction
+	else: $AnimatedSprite.offset.x = 0
 	
 func set_animation(anim):
 	if $AnimatedSprite.animation == anim: return

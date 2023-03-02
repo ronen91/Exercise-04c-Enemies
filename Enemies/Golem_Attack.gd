@@ -9,6 +9,7 @@ func _ready():
 func start():
 	enemy.velocity = Vector2.ZERO
 	$Timer.start()
+	enemy.set_animation("Attack")
 
 func physics_process(_delta):
 	pass

@@ -7,7 +7,7 @@ func _ready():
 	yield(enemy, "ready")
 
 func start():
-	pass
+	enemy.set_animation("Move")
 
 func physics_process(_delta):
 	if enemy.should_attack():
